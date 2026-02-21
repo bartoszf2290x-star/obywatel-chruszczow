@@ -542,17 +542,38 @@ body, html {
     
 
 
-    <script src="js/wybor.js"></script>
-    <script src="js/scale.js"></script>
-
-    <div style="
-    width: 300px; 
-    height: 400px;      
-    background-image: url('2.png');
-    background-size: cover;     
-    background-position: center top;
-    background-repeat: no-repeat;
+<div class="dowód" style="
+  width: 100%;
+  max-width: 380px;
+  min-height: 520px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  background-image: url('2.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  font-family: Arial, sans-serif;
 ">
+  <!-- reszta Twoich danych – Bartosz, Gądkowski itd. -->
+
+  <!-- opcjonalnie półprzezroczysta nakładka, żeby tekst był czytelny -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 1;
+    pointer-events: none;
+  "></div>
+
+  <!-- zawartość musi być wyżej niż nakładka -->
+  <div style="position: relative; z-index: 2;">
+    <!-- tu wklej swoje dotychczasowe dane, zdjęcie, flagę itp. -->
+  </div>
 </div>
 
 
