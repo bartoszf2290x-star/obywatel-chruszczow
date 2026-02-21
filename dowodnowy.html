@@ -245,22 +245,7 @@ body, html {
             <img src="./images/polish_flag.gif" alt="flaga" id="flaga" style="margin: 0; margin-top: 13px;">
             <div id="rzecz" style="margin: 0; margin-top: 10px;">
               <img src="./images/godlo.gif" alt="godlo" id="godlo">
-             <script>
-                    const godlo = document.getElementById('godlo');
             
-                    window.addEventListener('deviceorientation', (event) => {
-                        const rotationX = event.beta; 
-                        const rotationY = event.gamma; 
-            
-                        const amplifiedRotationX = rotationX * 15; 
-                        const amplifiedRotationY = rotationY * 15; 
-            
-                        const limitedRotationX = Math.min(Math.max(amplifiedRotationX, -100), 100);
-                        const limitedRotationY = Math.min(Math.max(amplifiedRotationY, -100), 100);
-            
-                        godlo.style.transform = `rotateX(${limitedRotationX}deg) rotateY(${limitedRotationY}deg)`;
-                    });
-                </script>
             
             
                 <p style="margin-left: 7px;">Rzeczpospolita<br>Polska</p>
